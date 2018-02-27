@@ -7,7 +7,10 @@ var data = {
     };
 
 function showWeather(weatherReport) {
-    $('#temperature').text(weatherReport.list[0].main.temp);
+    $('#temperature1').text(weatherReport.list[0].main.temp);
+    $('#humid1').text(weatherReport.list[0].main.humidity);
+    $('#description1').text(weatherReport.list[0].weather[0].description);
+
 	console.log(weatherReport);
     }
 
