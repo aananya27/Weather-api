@@ -1,6 +1,6 @@
 //Global Variables/Constants
 var weatherAPI = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=d183b59c195865a2b32f2fc527b35cfd'
-var cityNames = ["Delhi", "Mumbai", "Chennai", "Vellore", "Jaipur"];
+var cityNames = ["Delhi", "Mumbai", "Chennai", "Vellore", "Jaipur", "Pune"];
 
 //This is the function that will get called when the page will be loaded for the first time
 $(document).ready(function(){
@@ -8,7 +8,7 @@ $(document).ready(function(){
         getWeatherData(city);
         console.log(city);
     });
-    
+
 });
 
 //Makes a request to the API
@@ -29,4 +29,6 @@ function createDivForCity(weatherReport){
     $('<p>'+'City: '+weatherReport.city.name+'</p>').appendTo('#'+weatherReport.city.name);
     $('<p>'+'Temperature: '+weatherReport.list[0].main.temp+' C</p>').appendTo('#'+weatherReport.city.name);
     $('<p>'+'Humidity: '+weatherReport.list[0].main.humidity+'%</p>').appendTo('#'+weatherReport.city.name);
+    $('<p>'+'Description: '+weatherReport.list[0].weather[0].description+'</p>').appendTo('#'+weatherReport.city.name);
+
 }
