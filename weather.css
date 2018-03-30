@@ -1,12 +1,24 @@
-body {
-    background-color: lightblue;
+html {
+    margin:    0 auto;
 }
 
-h2 {
-    color: navy;
-    margin-left: 20px;
+body {
+    background-color: rgb(255, 255, 158);
+    margin: 0 auto;
 }
-h4{
-  color : navy;
-  margin-left: 50px;
+
+.city-card{
+    background-color: white;
+    padding: 10px;
+    color: rgb(69, 69, 69);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.temp-container{
+    padding: 8px;
+    background-color: rgb(111, 217, 255);
+    margin: 20px;
+    border-radius: 4px;
 }

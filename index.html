@@ -4,24 +4,15 @@
   <meta charset="utf-8">
   <title> What's the Weather Like? </title>
  <link rel="stylesheet"  href="weather.css" />
- <!-- <script src= "postCode.js" > </script> -->
  <script
    src="https://code.jquery.com/jquery-3.3.1.js"
    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
    crossorigin="anonymous"></script>
- <script src="weather.js"></script>
 </head>
 <body>
   <script src="weather.js"></script>
-  <div id="main">
-    <h2>Temperature in <span id="city1"> </span> </h2>
-    <h2>is : <span id="temperature1"></span>&deg;</h2>
-    <h4>Humidity is: <span id="humid1"></span> </h4>
-    <h4>Description : <span id="description1"></span> </h4>
-
-  <!-- <button id=b1 > Get weather </button> -->
+  <div id="tempContainer" class="temp-container">
+    <!--Populated dynamically by jquery on document load-->
   </div>
-
-
 </body>
 </html>
