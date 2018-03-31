@@ -29,13 +29,13 @@ function createDivForCity(weatherReport){
     $('<div class="city-name">'+weatherReport.city.name+'</div>').appendTo('#'+weatherReport.city.name);
     $('<div class="city-temp">'+weatherReport.list[0].main.temp+'</div>').appendTo('#'+weatherReport.city.name);
     $('<p>'+''+weatherReport.list[0].weather[0].description+'</p>').appendTo('#'+weatherReport.city.name);
-    if(weatherReport.list[0].weather[0].description.match(/sky/) && weatherReport.list[0].main.temp < 31){
-        $('<div class="weather-img"> <img src="svg/001-thermometer-1.svg" alt ="Thermometer" /></div>').appendTo('#'+weatherReport.city.name);
+    if(weatherReport.list[0].weather[0].description.match(/sky/) && weatherReport.list[0].main.temp < 20){
+        $('<div class="weather-img"> <img src="svg/010-cloud.svg" alt ="Thermometer" /></div>').appendTo('#'+weatherReport.city.name);
     }else if(weatherReport.list[0].weather[0].description.match(/cloud/)){
-        $('<div class="weather-img"> <img src="svg/006-cloud.svg" alt ="Cloud" /> </div>').appendTo('#'+weatherReport.city.name);
+        $('<div class="weather-img"> <img src="svg/012-cloud-1.svg" alt ="Cloud" /> </div>').appendTo('#'+weatherReport.city.name);
     }else if(weatherReport.list[0].weather[0].description.match(/rain/)){
-        $('<div class="weather-img"> <img src="svg/004-raindrop.svg" alt ="Raindrop" /></div>').appendTo('#'+weatherReport.city.name);
-    }else if(weatherReport.list[0].main.temp > 31){
-      $('<div class="weather-img"> <img src="svg/002-thermometer.svg" alt ="Thermometer" /></div>').appendTo('#'+weatherReport.city.name);
+        $('<div class="weather-img"> <img src="svg/009-rain-1.svg" alt ="Raindrop" /></div>').appendTo('#'+weatherReport.city.name);
+    }else if(weatherReport.list[0].main.temp >= 20){
+      $('<div class="weather-img"> <img src="svg/001-sun.svg" alt ="Thermometer" /></div>').appendTo('#'+weatherReport.city.name);
     }
 }
