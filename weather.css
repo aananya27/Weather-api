@@ -26,17 +26,17 @@ body {
 
 .city-name{
     width: 33%;
-    background: yellowgreen;
+    /* background: yellowgreen; */
 }
 
 .city-temp{
     width: 33%;
-    background: tomato;
+    /* background: tomato; */
 }
 
 .weather-img{
     width: 33%;
-    background: violet;
+
 }
 
 /*This css is applied for the image inside weather-img class*/
