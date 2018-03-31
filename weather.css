@@ -8,6 +8,7 @@ body {
 }
 
 .city-card{
+    display:flex;
     background-color: white;
     padding: 10px;
     color: rgb(69, 69, 69);
@@ -21,4 +22,25 @@ body {
     background-color: rgb(111, 217, 255);
     margin: 20px;
     border-radius: 4px;
+}
+
+.city-name{
+    width: 33%;
+    background: yellowgreen;
+}
+
+.city-temp{
+    width: 33%;
+    background: tomato;
+}
+
+.weather-img{
+    width: 33%;
+    background: violet;
+}
+
+/*This css is applied for the image inside weather-img class*/
+.weather-img img{
+    width: 100px;
+    height: 100px;
 }

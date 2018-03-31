@@ -26,9 +26,13 @@ function createDivForCity(weatherReport){
     console.log(weatherReport);
     //This will create a new div with id with the city name
     $('<div class="city-card" id = "'+weatherReport.city.name +'">').appendTo('#tempContainer');
-    $('<p>'+'City: '+weatherReport.city.name+'</p>').appendTo('#'+weatherReport.city.name);
-    $('<p>'+'Temperature: '+weatherReport.list[0].main.temp+' C</p>').appendTo('#'+weatherReport.city.name);
-    $('<p>'+'Humidity: '+weatherReport.list[0].main.humidity+'%</p>').appendTo('#'+weatherReport.city.name);
-    $('<p>'+'Description: '+weatherReport.list[0].weather[0].description+'</p>').appendTo('#'+weatherReport.city.name);
-
+    $('<div class="city-name">'+weatherReport.city.name+'</div>').appendTo('#'+weatherReport.city.name);
+    $('<div class="city-temp">'+weatherReport.list[0].main.temp+'</div>').appendTo('#'+weatherReport.city.name);
+    if(weatherReport.list[0].weather[0].description.match(/sky/)){
+        $('<div class="weather-img"> <img src="https://cdn.vectorstock.com/i/thumb-large/34/30/sunny-weather-vector-12503430.jpg" /></div>').appendTo('#'+weatherReport.city.name);
+    }else if(weatherReport.list[0].weather[0].description.match(/cloud/)){
+        $('<div class="weather-img"> <img src="https://thumb1.shutterstock.com/display_pic_with_logo/1328398/633464900/stock-vector-abstract-background-with-cartoon-cloudy-cloud-vector-icons-sky-blue-atmospheric-bubbles-comic-633464900.jpg" /> </div>').appendTo('#'+weatherReport.city.name);
+    }else if(weatherReport.list[0].weather[0].description.match(/rain/)){
+        $('<div class="weather-img"> <img src="https://cdn1.vectorstock.com/i/thumb-large/13/74/cloud-rain-cloudy-vector-10261374.jpg" /></div>').appendTo('#'+weatherReport.city.name);
+    }
 }
