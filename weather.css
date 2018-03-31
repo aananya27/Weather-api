@@ -8,14 +8,12 @@ body {
 }
 
 .city-card{
-    color: #d54d7b; 
-    font-family: "Great Vibes", cursive;
+    color: #4d7fd5; 
+    font-family: 'Varela Round', sans-serif;
     line-height: 160px; 
     font-weight: normal;
-    margin-bottom: 0px;
-    margin-top: 40px; 
+    margin: 40px; 
     text-shadow: 0 1px 1px #fff;
-    font-size: 50px;
     text-align: center;
     display:flex;
     background-color: white;
@@ -27,12 +25,15 @@ body {
 
 .temp-container{
     padding: 8px;
+    font-size: 55px;
     background-color: rgb(111, 217, 255);
     margin: 20px;
     border-radius: 4px;
 }
 
 .city-name{
+    color: rgb(60, 60, 60);
+    font-size: 30px;
     width: 33%;
     /* background: yellowgreen; */
 }
@@ -44,11 +45,13 @@ body {
 
 .weather-img{
     width: 33%;
-
+    text-align:center;
 }
 
 /*This css is applied for the image inside weather-img class*/
 .weather-img img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
 }
