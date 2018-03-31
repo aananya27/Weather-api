@@ -1,6 +1,6 @@
 //Global Variables/Constants
 var weatherAPI = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=d183b59c195865a2b32f2fc527b35cfd'
-var cityNames = ["Delhi", "Mumbai", "Chennai", "Vellore", "Jaipur", "Pune"];
+var cityNames = ["Delhi", "Vellore", "Jaipur"];
 
 //This is the function that will get called when the page will be loaded for the first time
 $(document).ready(function(){
@@ -28,7 +28,7 @@ function createDivForCity(weatherReport){
     $('<div class="city-card" id = "'+weatherReport.city.name +'">').appendTo('#tempContainer');
     $('<div class="city-name">'+weatherReport.city.name+'</div>').appendTo('#'+weatherReport.city.name);
     $('<div class="city-temp">'+weatherReport.list[0].main.temp+'</div>').appendTo('#'+weatherReport.city.name);
-    $('<p>'+''+weatherReport.list[0].weather[0].description+'</p>').appendTo('#'+weatherReport.city.name);
+    // $('<p>'+''+weatherReport.list[0].weather[0].description+'</p>').appendTo('#'+weatherReport.city.name);
     if(weatherReport.list[0].weather[0].description.match(/sky/) && weatherReport.list[0].main.temp < 20){
         $('<div class="weather-img"> <img src="svg/010-cloud.svg" alt ="Thermometer" /></div>').appendTo('#'+weatherReport.city.name);
     }else if(weatherReport.list[0].weather[0].description.match(/cloud/)){

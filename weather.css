@@ -8,13 +8,21 @@ body {
 }
 
 .city-card{
+    color: #d54d7b; 
+    font-family: "Great Vibes", cursive;
+    line-height: 160px; 
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 40px; 
+    text-shadow: 0 1px 1px #fff;
+    font-size: 50px;
+    text-align: center;
     display:flex;
     background-color: white;
-    padding: 10px;
-    color: rgb(69, 69, 69);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 0px 20px 0;
+    /* color: rgb(69, 69, 69); */
     border-radius: 4px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .temp-container{
