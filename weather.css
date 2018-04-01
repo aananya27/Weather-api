@@ -10,69 +10,37 @@ body {
 
 
 @media only screen and (max-width: 650px) {
-    body {
-        background-color: lightblue;
-        margin: 0 auto ;
-        
-    }
-    .city-card{
-        color: #4d7fd5; 
-        font-family: 'Varela Round', sans-serif;
-        line-height: 1.5 ; 
-        font-weight: normal;
-        margin: 2%; 
-        text-shadow: 0 1px 1px #fff;
-        text-align: center;
-        /* display:flex; */
-        flex-direction: column;
-        background-color: white;
-        /* padding: 20px 0px 20px 0; */
-        color: rgb(69, 69, 69);
-        border-radius: 4px;
-        /* margin: 20px; */
-      
-      
-    }
+
     .temp-container{
-        
         padding: 8px;
         font-size: 20%;
-        background-color: rgb(111, 217, 255);
         margin: 20px;
         border-radius: 4px;
-       
+    }
+
+    .temp-container .city-card{
+        font-family: 'Varela Round', sans-serif;
+        text-shadow: 0 1px 1px #fff;
+        text-align: center;
+        line-height: 35px; 
+        flex-direction: column;
+        padding: 20px;
 
     }
-    .city-name{
-        /* color: rgb(60, 60, 60); */
-        font-size: 50%;
-        width: 33%;
-        line-height: 1.5;
-        /* background: yellowgreen; */
+
+   .city-card .city-name{
+        width: 100% ;
     }
-    
-    .city-temp{
-        width: 33%;
-        font-size: 50%;
+
+    .city-card .city-temp{
+        width: 100%;
+        font-size: 80%;
         line-height: 1.5;
-        
-        /* background: tomato; */
     }
-    
-    .weather-img{
-        width: 20%;
+
+    .city-card .weather-img{
+        width: 100%;
         text-align:center;
-    }
-    
-    /*This css is applied for the image inside weather-img class*/
-    .weather-img img{
-        width: 1%;
-        height: 1%;
-        /* display: block; */
-        margin: auto;
-        
-
-      
     }
     
 }
